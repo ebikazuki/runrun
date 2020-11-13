@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}ランニング距離を記録するサービス | RUNRUN{% endblock %}
+
+{% block header%}
+<header class="masthead text-center text-white">
+  <div class="masthead-content">
+    <div class="container">
+      <h1 class="masthead-heading mb-0">RUNRUN</h1>
+      <h2 class="masthead-subheading mb-0">今日は何km走った？</h2>
+      <a href="{% url 'account_login' %}" class="btn btn-primary btn-xl rounded-pill mt-5">LOG IN</a>
+    </div>
+  </div>
+  <div class="bg-circle-1 bg-circle"></div>
+  <div class="bg-circle-2 bg-circle"></div>
+  <div class="bg-circle-3 bg-circle"></div>
+  <div class="bg-circle-4 bg-circle"></div>
+</header>
+{% endblock %}
+
+{% block contents %}
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <div class="p-5">
+          <img class="img-fluid rounded-circle" src="{% static 'img/01.jpg' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="p-5">
+          <h2 class="display-4">Twitter Base</h2>
+          <p>「#runrun ●●km」で走行距離を記録</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="p-5">
+          <img class="img-fluid rounded-circle" src="{% static 'img/02.jpg' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="p-5">
+          <h2 class="display-4">Visualize</h2>
+          <p>走行距離を可視化</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-2">
+        <div class="p-5">
+          <img class="img-fluid rounded-circle" src="{% static 'img/03.jpg' %}" alt="">
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-1">
+        <div class="p-5">
+          <h2 class="display-4">Free Service</h2>
+          <p>無料のウェブサービス</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
